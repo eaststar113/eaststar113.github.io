@@ -1,87 +1,45 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>웹프 기말 과제</title>
-  <link rel="stylesheet" href="css/product-result.css">
-</head>
-<body>
-  <header>
-    <div id="logo">
-      <a href="index-footer.html">
-        <h1>M U S E U M</h1>
-      </a>
-    </div>
-    <nav>
-      <ul id="topMenu">
-        <li><a href="#">단체 여행</a></li>
-        <li><a href="#">맞춤 여행</a></li>
-        <li><a href="#">갤러리</a></li>
-        <li><a href="#">문의하기</a></li>
-      </ul><br>
-    </nav>
-  </header>
-	<div id="container">
-    <h1>전국 국립 박물관</h1>
-    <div id="ex">엔시티엔시티127엔시티드림</div>
-		<ul class="prod-list">
-      <li>
-        <img src="images/seoul.museum.1.jpg">
-        <div class="caption">
-          <h2>상품 1</h2>
-          <p>상품 1 설명 텍스트</p>
-          <p>가격 : 12,345원</p>
-        </div>
-        <div id="hello">
-          <h2>hello</h2>
-        </div>
-        
-        <br>
-      </li>
-      <li>
-        <img src="images/prod2.jpg">
-        <div class="caption">
-          <h2>상품 2</h2>
-          <p>상품 2 설명 텍스트</p>
-          <p>가격 : 12,345원</p>
-        </div>
-      </li>
-      <li>
-        <img src="images/prod3.jpg">
-        <div class="caption">
-          <h2>상품 3</h2>
-          <p>상품 3 설명 텍스트</p>
-          <p>가격 : 12,345원</p>
-        </div>
-      </li>
-      <li>
-        <img src="images/prod3.jpg">
-        <div class="caption">
-          <h2>상품 3</h2>
-          <p>상품 3 설명 텍스트</p>
-          <p>가격 : 12,345원</p>
-        </div>
-      </li>
-      <li>
-        <img src="images/prod3.jpg">
-        <div class="caption">
-          <h2>상품 3</h2>
-          <p>상품 3 설명 텍스트</p>
-          <p>가격 : 12,345원</p>
-        </div>
-      </li>
-    </ul>
-	</div>
-  <footer>    
-    <section id="bottomMenu">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>라이트박스</title>
+    <link rel="stylesheet" href="css/lightbox.css">
+  </head>
+  <body>
+    <div class="row">
       <ul>
-        <li><a href="#">회사 소개</a></li>
-        <li><a href="#">개인정보처리방침</a></li>
-        <li><a href="#">여행약관</a></li>
-        <li><a href="#">사이트맵</a></li>
-      </ul>
-    </section>   
-  </footer> 
-</body>
+        <li><img src="images/tree-1-thumb.jpg" data-src="images/tree-1.jpg" class="pic"></li>
+        <li><img src="images/tree-2-thumb.jpg" data-src="images/tree-2.jpg" class="pic"></li>
+        <li><img src="images/tree-3-thumb.jpg" data-src="images/tree-3.jpg" class="pic"></li> 
+        <li><img src="images/tree-4-thumb.jpg" data-src="images/tree-4.jpg" class="pic"></li>
+        <li><img src="images/tree-5-thumb.jpg" data-src="images/tree-5.jpg" class="pic"></li>
+        <li><img src="images/tree-6-thumb.jpg" data-src="images/tree-6.jpg" class="pic"></li>          
+      </ul>    
+    </div>
+
+    <div id="lightbox">
+			<img src="images/tree-1.jpg" alt="" id="lightboxImage">			
+    </div>
+
+    <script>
+      var pics = document.getElementsByClassName("pic"); // .pic인 요소들을 가져와 pics 라는 변수에 저장. querySelectorAll(".pic")도 가능
+      var lightbox = document.getElementById("lightbox");  // 라이트 박스. querySelector("#lightbox")도 가능
+      var lightboxImage = document.getElementById("lightboxImage");  // 라이트 박스 안의 이미지. querySelector("#lightboxImage")도 가능
+
+      for (i=0; i<pics.length; i++) {
+        pics[i].addEventListener("click", showLightbox);
+      }
+
+      function showLightbox() {
+				var bigLocation = this.getAttribute("data-src"); // bigLocation = this.data-src; 도 가능.
+				lightboxImage.setAttribute("src", bigLocation);  // lightboxImage.src = bigLocation; 도 가능.
+				lightbox.style.display = "block";  // 라이트박스 이미지를 화면에 표시
+      }
+      
+      lightbox.onclick = function() {  //click 이벤트가 발생했을 때 실행할 함수 선언
+				lightbox.style.display = "none";  // lightbox 요소를 화면에서 감춤
+      }
+    </script>
+  </body>
 </html>
