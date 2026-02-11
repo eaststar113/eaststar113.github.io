@@ -7,7 +7,7 @@ img: ssafy_14th_common_pjt.png
 alt: image-alt
 project-date: Jan 2026
 client: SSAFY 공통 프로젝트
-category: 백엔드 개
+category: 백엔드 개발
 description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한 실시간 올인원 AI 협업 플랫폼, DIDIT
 ---
 
