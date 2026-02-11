@@ -1,6 +1,7 @@
 ---
 layout: default
 modal-id: 6
+title: DIDIT
 date: 2026-02-11
 img: ssafy_14th_common_pjt.png
 alt: image-alt
