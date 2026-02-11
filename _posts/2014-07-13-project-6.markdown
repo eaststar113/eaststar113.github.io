@@ -14,7 +14,7 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 <br>
 
 #### 프로젝트 개요
-##### 개발자들이 겪는 컨텍스트 스위칭(Context Switching) 문제를 해결하기 위해, 회의록 자동 생성 및 깃허브 이슈 자동 분석 기능을 제공하는 서비스입니다.
+> **"회의는 짧게, 기록은 정확하게"** > 개발자의 컨텍스트 스위칭 문제를 해결하기 위해 AI 기반 회의록 자동 생성 및 깃허브 이슈 분석 기능을 제공하는 협업 플랫폼입니다.
 
 ---
 
@@ -59,7 +59,7 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 
 ---
 
-#### 기술 스택 (Tech Stack)
+#### 기술 스택
 * **Language/Framework**: Java 21, Spring Boot 4.0.1, Spring Security
 * **Persistence**: Spring Data JPA, QueryDSL, MySQL 8.0
 * **Messaging/Cache**: Redis 7.2 (Alpine)
