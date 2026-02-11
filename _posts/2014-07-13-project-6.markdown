@@ -45,12 +45,13 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 
 <div align="center">
   <img src="/img/portfolio/erd.png" width="70%" alt="ERD 구조도">
-  <p><em>[그림 1] DIDIT 서비스 논리 ERD 구조도</em></p>
+  <br>
+  <small>[그림 1] DIDIT 서비스 논리 ERD 구조도</small>
 </div>
 
 1. **내용**:
    * GitHub API 연동을 통해 커밋/이슈 상태를 실시간으로 동기화하고, 이를 AI 서버로 전달하여 우선순위를 자동 산출하는 파이프라인 구축
-   * **JPA 연관관계 최적화**: 지연 로딩 및 Fetch Join을 통해 N+1 문제를 방지하며 회의실-이슈-유저 간의 복잡한 흐름 정리
+   * JPA 연관관계 최적화: 지연 로딩 및 Fetch Join을 통해 N+1 문제를 방지하며 회의실-이슈-유저 간의 복잡한 흐름 정리
 2. **성과**: 복잡한 비즈니스 로직을 도메인 계층으로 응집시켜 코드 유지보수성 향상
 
 ##### 4. 보안 및 인증
