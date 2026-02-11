@@ -33,10 +33,12 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 ---
 
 ### ▫️담당 역할
-<p><strong>이슈 & AI 서버 파이프라인</strong> : 이슈 CRUD 개발 및 AI 분석 서버 연동을 위한 비동기 파이프라인 구축</p>
-<p><strong>실시간 통신 아키텍처</strong> : Redis Pub/Sub 및 SSE를 활용한 실시간 알림 핸들링 전담</p>
-<p><strong>핵심 도메인 로직</strong> : 회의실 생성, 상태 관리 등 회의 관련 주요 비즈니스 로직 설계</p>
-<p><strong>보안 및 인증</strong> : Spring Security 기반의 안정적인 인증 프로세스 구현</p>
+<div style="font-size: 0.95em; line-height: 1.8; color: #555;">
+  <p style="margin-bottom: 12px;"><strong>이슈 & AI 서버 파이프라인</strong> : 이슈 CRUD 개발 및 AI 분석 서버 연동을 위한 비동기 파이프라인 구축</p>
+  <p style="margin-bottom: 12px;"><strong>실시간 통신 아키텍처</strong> : Redis Pub/Sub 및 SSE를 활용한 실시간 알림 핸들링 전담</p>
+  <p style="margin-bottom: 12px;"><strong>핵심 도메인 로직</strong> : 회의실 생성, 상태 관리 등 회의 관련 주요 비즈니스 로직 설계</p>
+  <p style="margin-bottom: 0;"><strong>보안 및 인증</strong> : Spring Security 기반의 안정적인 인증 프로세스 구현</p>
+</div>
 
 ---
 
