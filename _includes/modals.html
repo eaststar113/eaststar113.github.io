@@ -19,6 +19,9 @@
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
+            <div class="project-content text-left" style="margin-bottom: 30px;">
+                {{ post.content }}
+            </div>
             <ul class="list-inline item-details">
               {% if post.client %}
               <li>Client:
