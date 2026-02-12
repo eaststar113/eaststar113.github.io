@@ -46,9 +46,12 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 
 <p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 0;"><strong>문제</strong> : AI의 이슈 우선순위 분석이 5~10초가 소요되어 사용자 화면 멈춤 및 타임아웃 위험 발생</p>
 <p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 0;"><strong>해결</strong> :  
-  * 분석 요청 즉시 202 응답을 반환하는 비동기 구조 설계
-  * Redis Pub/Sub을 도입해 AI 서버의 분석 완료 메시지를 수신하도록 구현
-  * SSE를 통해 클라이언트에게 실시간 분석 완료 알림 및 데이터 푸시</p>
+  <ul style="margin-top: 0; margin-bottom: 12px; padding-left: 20px; color: #555;">
+    <li>분석 요청 즉시 202 응답을 반환하는 비동기 구조 설계</li>
+    <li>Redis Pub/Sub을 도입해 AI 서버의 분석 완료 메시지를 수신하도록 구현</li>
+    <li>SSE를 통해 클라이언트에게 실시간 분석 완료 알림 및 데이터 푸시</li>
+  </ul>
+</p>
 <p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 0;"><strong>결과</strong> : AI 분석 중에도 자유로운 서비스 이용이 가능해지며 사용자 경험 극대화</p>
 
 <br>
