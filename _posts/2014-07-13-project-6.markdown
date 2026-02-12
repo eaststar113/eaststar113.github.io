@@ -44,8 +44,8 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 
 #### 1. Redis & SSE를 활용한 비동기 분석 시스템 구축
 
-<p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 0;"><strong>문제</strong> : AI의 이슈 우선순위 분석이 5~10초가 소요되어 사용자 화면 멈춤 및 타임아웃 위험 발생</p>
-<p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 0;"><strong>해결</strong> :  
+<p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 10px;"><strong>문제</strong> : AI의 이슈 우선순위 분석이 5~10초가 소요되어 사용자 화면 멈춤 및 타임아웃 위험 발생</p>
+<p style="font-size: 0.95em; line-height: 1.6; color: #555;margin-bottom: 10px;"><strong>해결</strong> :  
   <ul style="margin-top: 0; margin-bottom: 12px; padding-left: 20px; color: #555;">
     <li>분석 요청 즉시 202 응답을 반환하는 비동기 구조 설계</li>
     <li>Redis Pub/Sub을 도입해 AI 서버의 분석 완료 메시지를 수신하도록 구현</li>
