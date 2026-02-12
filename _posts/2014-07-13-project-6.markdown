@@ -58,9 +58,9 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
 
 #### 2. No-Offset 기반의 대용량 데이터 조회 최적화
 
-- 문제 : 누적되는 방대한 채팅 및 이슈 조회 시 Offset 기반 페이징의 성능 저하 우려
-- 해결 : QueryDSL을 활용한 No-Offset(Cursor 기반) 방식의 무한 스크롤 API 구현
-- 결과 : 인덱스 스캔 효율을 높여 데이터가 늘어나도 일정한 조회 성능 유지 및 서버 자원 점유 시간 감소  
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>문제</strong> : 누적되는 방대한 채팅 및 이슈 조회 시 Offset 기반 페이징의 성능 저하 우려</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>해결</strong> : QueryDSL을 활용한 No-Offset(Cursor 기반) 방식의 무한 스크롤 API 구현</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>결과</strong> : 인덱스 스캔 효율을 높여 데이터가 늘어나도 일정한 조회 성능 유지 및 서버 자원 점유 시간 감소</p>
 
 <br>
 
@@ -72,26 +72,28 @@ description: GitHub 연동부터 음성 회의 요약까지, 개발자를 위한
   <small>[그림 1] DIDIT 서비스 논리 ERD 구조도</small>
 </div>
 
-- 내용 :
-   * GitHub API 연동을 통해 커밋/이슈 상태를 실시간으로 동기화하고, 이를 AI 서버로 전달하여 우선순위를 자동 산출하는 파이프라인 구축
-   * JPA 연관관계 최적화: 지연 로딩 및 Fetch Join을 통해 N+1 문제를 방지하며 회의실-이슈-유저 간의 복잡한 흐름 정리  
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>내용</strong> :</p>
+<ul style="margin-top: 0; margin-bottom: 12px; padding-left: 20px; color: #555;">
+   <li>GitHub API 연동을 통해 커밋/이슈 상태를 실시간으로 동기화하고, 이를 AI 서버로 전달하여 우선순위를 자동 산출하는 파이프라인 구축</li>
+   <li>JPA 연관관계 최적화: 지연 로딩 및 Fetch Join을 통해 N+1 문제를 방지하며 회의실-이슈-유저 간의 복잡한 흐름 정리  </li>
+</ul>
 
-- 성과 : 복잡한 비즈니스 로직을 도메인 계층으로 응집시켜 코드 유지보수성 향상
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>성과</strong> : 복잡한 비즈니스 로직을 도메인 계층으로 응집시켜 코드 유지보수성 향상</p>
 
 <br>
 
 #### 4. 보안 및 인증
 
-- 구현 : Spring Security를 적용하여 보안 취약점을 방어하고, 세션/토큰 관리를 통한 안정적인 로그인/로그아웃 프로세스 구축
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>구현</strong> : Spring Security를 적용하여 보안 취약점을 방어하고, 세션/토큰 관리를 통한 안정적인 로그인/로그아웃 프로세스 구축</p>
 
 ---
 
 ### 🔹기술 스택
 
-* **Language/Framework** : Java 21, Spring Boot 4.0.1, Spring Security
-* **Persistence** : Spring Data JPA, QueryDSL, MySQL 8.0
-* **Messaging/Cache** : Redis 7.2 (Alpine)
-* **Media** : OpenVidu 2.32.1
-* **DevOps** : Docker, Jenkins, Nginx (Reverse Proxy & SPA Routing)
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>Language/Framework</strong> : Java 21, Spring Boot 4.0.1, Spring Security</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>Persistence</strong> : Spring Data JPA, QueryDSL, MySQL 8.0</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>Messaging/Cache</strong> : Redis 7.2 (Alpine)</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>Media</strong> : OpenVidu 2.32.1</p>
+<p style="font-size: 0.85em; color: #666; margin-top: 10px;"><strong>DevOps</strong> : Docker, Jenkins, Nginx (Reverse Proxy & SPA Routing)</p>
 
 <br>
